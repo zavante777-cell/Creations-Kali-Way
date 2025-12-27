@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Creations Kali Way</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Menu Button (top-left corner) -->
+    <button class="btn" id="menuBtn">
+<span class="icon">
+<svg viewBox="0 0 175 80" width="40" height="40">
+<rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+<rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+<rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+</svg>
+</span>
+<span class="text">MENU</span>
+    </button>
+ <!-- Dropdown Menu -->
+<nav class="menu" id="menu">
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+
+<!-- Header -->
+<header>
+<h1>Creations The Kali Way</h1>
+<p>Original Art & Custom Creations!</p>
+</header>
+<!-- Full Screen Picture with Text -->
+<section class="hero">
+<h2>Welcome</h2>
+<p>Welcome to Creations The Kali Way — use the <strong>MENU</strong> button (top-left) to visit About, Gallery, and Contact pages.</p>
+</section>
+<!-- Footer -->
+<footer>
+<p>© 2025 Creations The Kali Way</p>
+</footer>
+
+<!-- Simple Menu Script -->
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+
+    // Toggle menu when button is clicked
+    menuBtn.addEventListener('click', function() {
+        menu.classList.toggle('show');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!menuBtn.contains(e.target) && !menu.contains(e.target)) {
+            menu.classList.remove('show');
+        }
+    });
+
+    // Close menu when pressing Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            menu.classList.remove('show');
+        }
+
+
+    });
+</script>
+
+</body>
+</html>

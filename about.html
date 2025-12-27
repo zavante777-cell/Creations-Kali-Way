@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Creations Kali Way</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Archivo:wght@300;400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- your existing styles -->
+  <link rel="stylesheet" href="tooplate-split-portfolio.css"> <!-- template styles -->
+</head>
+<body>
+<!-- Menu Button/NEW CODE 1:14PM -->
+ <button class="btn" id="menuBtn">
+  <span class="icon">
+    <svg viewBox="0 0 175 80" width="40" height="40">
+      <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+      <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+      <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+    </svg>
+  </span>
+  <span class="text">MENU</span>
+</button>   
+<nav class="menu" id="menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<!-- End of added code!!!!! -->
+
+<header>
+  <h1>Creations The Kali Way</h1>
+  <p>Original Art & Custom Creations!</p>
+</header>
+
+<main>
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="split-work">
+    <!-- Left panel for image -->
+    <div class="split-left" style="background-image:url('Pictures/Archive-9493/IMG_20251219_005213_01.jpg'); background-position: center 80%; background-size: 50%; position: relative;"> 
+      <div class="project-image"></div>
+    </div>
+
+    <!-- Right panel for text content -->
+    <div class="split-right">
+      <div class="project-details active">
+        <div class="project-number">01 / 01</div>
+        <h1 class="project-title">Original Art & Custom Creations!</h1>
+        <span class="project-category">Brand Identity</span>
+        <p class="project-description">
+          
+        </p>
+      </div>
+
+      <div class="project-details">
+        <div class="project-number">02 / 01</div>
+        <h1 class="project-title">Original Art & Custom Creations!</h1>
+        <span class="project-category">Web Design</span>
+        <p class="project-description">
+          Placeholder text for your project description. Replace with your own text later.
+        </p>
+      </div>
+    </div>
+  </div>
+</section></main>
+<footer>
+  <p>&copy; 2025 Creations The Kali Way. All rights reserved.</p>
+</footer>
+
+<script>
+// Simple menu toggle
+document.getElementById('menuBtn').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('show');
+});
+</script></html>
+
+
+
