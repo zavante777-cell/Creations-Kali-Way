@@ -236,3 +236,103 @@ footer {
 #about .split-left .project-image {
     display: none; /* Hide this since we're using parent background */
 }
+/* === ABOUT SECTION FIX === */
+.about-section {
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.split-work {
+    display: flex;
+    min-height: 600px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.split-left {
+    flex: 1;
+    min-height: 600px;
+    background-size: cover !important;
+    background-position: left center !important;
+}
+
+.split-right {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-number {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.project-category {
+    color: #ff4081;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* === FONT STYLING === */
+body {
+    font-family: 'Archivo', Arial, sans-serif;
+}
+
+.project-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.project-number {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+}
+
+.project-category {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-description {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+}
+/* Change the project title color */
+.project-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fdfdfd; /* Change this to whatever color you want */
+}
+.highlight-Daniel {
+    color: #a86602; /* Gold color */
+    font-weight: 700;
+}
+
+.highlight-Psalm {
+    color: #dde1e7; /* Gold color */
+    font-weight: 700;
+}
+
