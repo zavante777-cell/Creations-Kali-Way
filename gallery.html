@@ -34,9 +34,23 @@
 <main>
   <section>
     <h2>Gallery</h2>
-    <p>Check out the latest creations.</p>
-  </section>
-  <p><a href="index.html">← Back to Home</a></p>
+    <p>Check out the latest creations :D</p>
+<div class="gallery-container">
+  <!-- Big image with arrows -->
+  <div class="main-image-container">
+    <button class="arrow-btn left" onclick="changeImageByDirection(-1)">❮</button>
+    <img id="mainImage" src="Pictures/Archive-9493/IMG_20251219_005205_01.jpg" alt="Gallery">
+    <button class="arrow-btn right" onclick="changeImageByDirection(1)">❯</button>
+  </div>
+  
+  <!-- Thumbnails below -->
+  <div class="thumbnails">
+    <img src="Pictures/Archive-9493/IMG_20251219_005205_01.jpg" alt="" onclick="changeImageByIndex(0)">
+    <img src="Pictures/Archive-9493/IMG_20251219_005201_01.jpg" alt="" onclick="changeImageByIndex(1)">
+    <img src="Pictures/Archive-9493/IMG_20251219_005218_01.jpg" alt="" onclick="changeImageByIndex(2)">
+    <img src="Pictures/Archive-9493/IMG_20251219_005227_01.jpg" alt="" onclick="changeImageByIndex(3)">
+  </div>
+</div>  </section>
 </main>
 <footer>
   <p>© 2025 Creations The Kali Way</p>
